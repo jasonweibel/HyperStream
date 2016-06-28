@@ -1,0 +1,4 @@
+3.times do
+  play 60 + rand(10)
+  sleep 0.5
+end

@@ -1,0 +1,4 @@
+play_pattern [40, 25, 45, 25, 25, 50, 50]
+
+#play_pattern [40, 25, 45, 25, 25, 50, 50].sort
+#play_pattern [40, 25, 45, 25, 25, 50, 50].shuffle

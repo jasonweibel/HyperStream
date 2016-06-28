@@ -1,0 +1,14 @@
+# Toss a virtual coin
+if rand(1) < 0.5
+# if heads, play two ascending notes
+  play 60
+  sleep 0.5
+  play 62
+else
+  # if tails, play three descending notes
+  play 72
+  sleep 0.25
+  play 71
+  sleep 0.25
+  play 70
+end

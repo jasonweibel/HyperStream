@@ -1,0 +1,89 @@
+# Sonic PI essentials - https://www.raspberrypi.org/magpi/issues/essentials-sonic-pi-v1/
+# ALT+R to Run.
+
+# -----------------------------------------
+#Live loop
+# -----------------------------------------
+live_loop :beats do
+  sample :bd_haus
+  sleep 0.5
+end
+
+# -----------------------------------------
+# Redefining on-the-fly
+# -----------------------------------------
+#live_loop :choral_drone do
+# sample :ambi_choir, rate: 0.4
+# sleep 1
+#end
+
+# -----------------------------------------
+# Combining sounds
+# -----------------------------------------
+
+#live_loop :beats do
+#  sample :bd_tek
+#  with_fx :echo, phase: 0.125, mix: 0.4 do
+#    sample :drum_cymbal_soft, sustain: 0, release: 0.1
+#    sleep 0.5
+#  end
+#end
+#
+#live_loop :bass do
+#  use_synth :tb303
+#  synth :tb303, note: :e1, release: 4, cutoff: 120,
+#  cutoff_attack: 1
+#  sleep 4
+#end
+
+# -----------------------------------------
+# Steve Reich’s piano phase
+# -----------------------------------------
+
+#notes = (ring :E4, :Fs4, :B4, :Cs5, :D5, :Fs4, :E4, :Cs5, :B4, :Fs4, :D5, :Cs5)
+#
+#live_loop :slow do
+#  play notes.tick, release: 0.1
+#  sleep 0.3
+#end
+#
+#live_loop :faster do
+#  play notes.tick, release: 0.1
+#  sleep 0.295
+#end
+
+# -----------------------------------------
+# Bringing it all together
+# -----------------------------------------
+
+#with_fx :reverb, room: 1 do
+#  live_loop :time do
+#    synth :prophet, release: 8, note: :e1, cutoff: 90, amp: 3
+#    sleep 8
+#  end
+#end
+#
+#live_loop :machine do
+#  sample :loop_garzul, rate: 0.5, finish: 0.25
+#  sample :loop_industrial, beat_stretch: 4, amp: 1
+#  sleep 4
+#end
+#
+#live_loop :kik do
+#  sample :bd_haus, amp: 2
+#  sleep 0.5
+#end
+#
+#with_fx :echo do
+#  live_loop :vortex do
+#  # use_random_seed 800
+#  notes = (scale :e3, :minor_pentatonic, num_octaves: 3)
+#    16.times do
+#      play notes.choose, release: 0.1, amp: 1.5
+#      sleep 0.125
+#    end
+#  end
+#end
+
+
+
