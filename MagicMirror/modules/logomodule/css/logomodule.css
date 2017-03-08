@@ -1,0 +1,21 @@
+.logomodule__container {
+    width: 200px;
+    height: auto;
+}
+
+.logomodule__container img {
+    width: 100%;
+    height: inherit;
+}
+
+.logomodule__container.left {
+    margin: 0 auto 0 0;
+}
+
+.logomodule__container.center {
+    margin: 0 auto;
+}
+
+.logomodule__container.right {
+    margin: 0 0 0 auto;
+}
